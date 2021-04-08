@@ -2,8 +2,21 @@
 
 html, body {
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 
 h1 {
     color: rgb(161, 161, 161);
+    font-size: 60px;
+}
+
+#weather-data {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    margin: 100px auto;
+    width: 30%;
+    height: 500px;
+    box-shadow: rgba(75, 75, 75, 0.35) 0px 2px 40px;
+    border-radius: 30px;
 }

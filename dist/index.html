@@ -8,7 +8,18 @@
     <title>WeatherApp</title>
 </head>
 <body>
-    <h1>WeatherApp</h1> 
+    <div id="header">
+        <h1>WeatherApp</h1>
+        <form id="search-form" onsubmit="return false">
+            <input id="search-bar" type="text" placeholder="Search for a city" required>
+            <button id="submit-button" type="submit">Search</button>
+        </form> 
+    </div>
+    <div id="container">
+        <div id="weather-data">
+            
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
