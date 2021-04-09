@@ -12,11 +12,48 @@ h1 {
 
 #weather-data {
     display: grid;
+    grid-template-areas: 
+    "city-name city-name city-name city-name"
+    "main-temp main-temp weather-main weather-main"
+    "main-temp main-temp weather-desc weather-desc"
+    "high-temp low-temp feels-like humidity";
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 25%);
     margin: 100px auto;
-    width: 30%;
-    height: 500px;
+    width: 40%;
+    height: 450px;
     box-shadow: rgba(75, 75, 75, 0.35) 0px 2px 40px;
     border-radius: 30px;
+}
+
+#city-name {
+    grid-area: city-name;
+}
+
+#main-temp {
+    grid-area: main-temp;
+}
+
+#weather-main {
+    grid-area: weather-main;
+}
+
+#weather-desc {
+    grid-area: weather-desc;
+}
+
+#high-temp {
+    grid-area: high-temp;
+}
+
+#low-temp {
+    grid-area: low-temp;
+}
+
+#feels-like {
+    grid-area: feels-like;
+}
+
+#humidity {
+    grid-area: humidity;
 }
