@@ -26,6 +26,15 @@ input:focus::placeholder {
 
 #submit-button {
     margin: 20px;
+    background-color: white;
+}
+
+.bi-search {
+    color: rgb(97, 97, 97);
+}
+
+.bi-search:hover {
+    color: rgb(151, 151, 151);
 }
 
 #weather-data {
@@ -45,6 +54,34 @@ input:focus::placeholder {
     height: 400px;
     box-shadow: rgba(75, 75, 75, 0.35) 0px 2px 40px;
     border-radius: 30px;
+}
+
+#temp-toggle {
+    position: relative;
+    bottom: 70px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    background-color: rgb(97, 97, 97);
+    
+}
+
+#submit-button, #temp-toggle {
+    padding: 0;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 30px;
+    outline: none;
+}
+
+#temp-toggle:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #city-name {
