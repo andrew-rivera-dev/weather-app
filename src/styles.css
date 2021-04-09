@@ -3,31 +3,53 @@
 html, body {
     font-family: 'Lato', sans-serif;
     text-align: center;
+    color: rgb(97, 97, 97);
 }
 
 h1 {
-    color: rgb(161, 161, 161);
     font-size: 60px;
+}
+
+#search-bar {
+    font-family: inherit;
+    color: inherit;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#submit-button {
+    margin: 20px;
 }
 
 #weather-data {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-areas: 
     "city-name city-name city-name city-name"
+    ". . . ."
     "main-temp main-temp weather-main weather-main"
-    "main-temp main-temp weather-desc weather-desc"
+    ". . weather-desc weather-desc"
     "high-temp low-temp feels-like humidity";
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
     margin: 100px auto;
     width: 40%;
-    height: 450px;
+    height: 400px;
     box-shadow: rgba(75, 75, 75, 0.35) 0px 2px 40px;
     border-radius: 30px;
 }
 
 #city-name {
     grid-area: city-name;
+    font-size: 50px;
 }
 
 #main-temp {
@@ -36,10 +58,17 @@ h1 {
 
 #weather-main {
     grid-area: weather-main;
+    align-self: end;
+}
+
+#weather-main, #main-temp {
+    font-size: 80px;
 }
 
 #weather-desc {
     grid-area: weather-desc;
+    font-size: 30px;
+    align-self: start;
 }
 
 #high-temp {
@@ -56,4 +85,8 @@ h1 {
 
 #humidity {
     grid-area: humidity;
+}
+
+#high-temp, #low-temp, #feels-like, #humidity {
+    font-size: 24px;
 }
